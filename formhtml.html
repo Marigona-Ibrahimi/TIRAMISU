@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form method="GET" align="left" style="margin: 10px;">
+            <fieldset style="width: 950px; margin-left: 12%;">
+                <legend align="center"><h2>Tiramisu Order</h2></legend>
+                <label for="name" >Name: <input type="text" name="Name: " placeholder="Type your name" minlength="5" maxlength="10" required/></label><br><br>
+                <label for="email">Email: <input type="email" name="Email: " placeholder="Enter your email"/></label><br><br>
+                <label for="email">Phone number :<input type="tnumber" name="Phone number" placeholder="Type your phone number"></label><br><br>
+                <label for="">Number orders: <input type="number" name="grade" min="2" max="10" value="5"/></label> <br><br>
+                <label for="cake">Choose a cake:</label>
+                <select id="cakes" name="cakes">
+                    <option value="tiramisu">Tiramisu</option>
+                    <option value="trileqe">Trileqe</option>
+                    <option value="bounty">Bounty</option>
+                    <option value="kinder">Kinder</option>
+                </select><br><br>
+                <label for="">Date: <input type="date" name="" id=""></label>
+    
+                <br><br>
+                <input type="submit" value="Submit"/>
+                <input type="reset" name="Reset"/>
+            </fieldset>
+            <fieldset style="width: 950px; margin-left: 12%;">
+                <legend align="center"><h2>Voices</h2></legend>
+                <label for="name" ><h4>Farm Animals voice:</h4> 
+                <audio align="left" controls>
+                    <source src="audio/farm-animals.wav" type="audio/ogg">
+                    <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+                    Your browser does not support the audio element.
+                </audio>
+                <label for="name" ><h4>Monkey Laugh voice:</h4> 
+                <audio align="left" controls>
+                    <source src="audio/monkey-laugh.wav" type="audio/ogg">
+                    <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+                    Your browser does not support the audio element.
+                </audio>
+                </legend>
+            </fieldset>
+            <fieldset style="width: 950px; margin-left: 12%;">
+                <legend align="center"><h2>Videos</h2></legend>
+                <label for="name" ><h4>Nora Istrefi - Ciao:</h4>
+                <video width="400" height="auto" controls>
+                    <source src="video/Nora Istrefi - Ciao.mp4" type="video/mp4">
+                </video>
+                <label for="name" ><h4>Lorenc Hasrama - Tkam dasht:</h4>
+                <video width="400" height="auto" controls>
+                    <source src="video/Lorenc Hasrama - T’kam dasht.mp4" type="video/mp4">
+                </video>
+            </fieldset>
+        </form>
+    </body>
+</html>
