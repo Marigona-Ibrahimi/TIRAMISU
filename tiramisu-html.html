@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
     <title>Tiramisu</title>
+    <style>
+        *{
+            font-family: Apple Chancery, cursive, sans-serif; 
+        }
+        #header-title{
+            font-family: Apple Chancery, cursive, sans-serif; 
+            text-transform: uppercase;
+        }
+        table{
+            /* border: 1px dashed red; */
+            margin-bottom: 4px;
+            font-size: large;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        dl:hover, p:hover{
+            background-color:blanchedalmond;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <table align="center" width="950">
+    <table id="first">
+        <table align="center" width="950" id="table-1">
             <tr>
-                <td><h1>Tiramisu</h1></td>
+                <td><h1 id="header-title">Tiramisu</h1></td>
                 <td align="right"><a href="https://amazon.com">Buy on Amazon!</a></td>
             </tr>
             <tr>
@@ -105,24 +126,7 @@
                 </td>
             </tr>
         </table>
-        <table align="center" width="950">
-            <tr>
-                <form method="GET" align="center">
-                    <input type="text" name="Name: " placeholder="Type your name" minlength="5" maxlength="10" required/><br><br>
-                    <!-- <input type="tel" name="Tel: " placeholder="Type your phone number" required pattern="id(9)"/><br><br> -->
-                    <!-- <input type="search" name="Search" placeholder="Search"/><br><br> -->
-                    <input type="text" name="Table number " placeholder="Table number "/><br><br>
-                    <input type="email" name="Email: " placeholder="Enter your email"/><br><br>
-                    <input type="password" name="Password" placeholder="Type your pass"><br><br>
-                    <label for="">Number of tiramisu orders: <input type="number" name="grade" min="2" max="10" value="5"/></label> <br><br>
-                    <label for="">Date: <input type="date" name="" id=""></label> 
-                    
-                    <br><br>
-                    <input type="submit" value="Submit"/>
-                    <input type="reset" name="Reset"/>
-                </form>
-            </tr>
-        </table>
+        
     </table>
 </body>
 </html>
