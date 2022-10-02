@@ -5,53 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiramisu Text</title>
-    <style>
-        *{
-            font-family: Apple Chancery, cursive, sans-serif; 
-        }
-        body{
-            background-color: aliceblue;
-        }
-        .text {
-            max-width: 70%;
-            min-width: none;
-            max-height: auto;
-            border: 1px dotted antiquewhite;
-            border-radius: 5px;
-            margin:auto;
-            margin-top: 50px;
-            display:flex;
-        }
-        .text p{
-            max-width: fit-content;
-            border: 1px dotted rgb(173, 82, 82);
-            transition: transform .2s;
-            box-shadow: 10px -10px 5px rgb(231, 216, 197);
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            z-index: 1;
-            background-color: antiquewhite;
-            transform: scale(1.1);
-        }
-        .text p:hover{
-            transform: scale(1.1);
-            z-index: 1;
-        }
-        .text :nth-child(2){
-            width:auto;
-            height:210px;
-            margin-left: -10px;
-            margin-top: 10px;
-            transition: transform .2s;
-            border-radius: 5px;
-            object-fit: cover;
-            background-position: center center;
-        }
-        .text :nth-child(2):hover{
-            transform: scale(1.1);
-            z-index: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
