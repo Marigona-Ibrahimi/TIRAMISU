@@ -1,6 +1,15 @@
 *{
     font-family: Apple Chancery, cursive, sans-serif; 
 }
+#header-title{
+    font-family: Apple Chancery, cursive, sans-serif; 
+    text-transform: uppercase;
+}
+table{
+    /* border: 1px dashed red; */
+    margin-bottom: 4px;
+    font-size: large;
+}
 body{
     background-color: aliceblue;
 }
@@ -14,7 +23,7 @@ body{
     margin-top: 50px;
     display:flex;
 }
-.text p{
+.text p, #table1 td img{
     max-width: fit-content;
     border: 1px dotted rgb(173, 82, 82);
     transition: transform .2s;
@@ -25,7 +34,7 @@ body{
     background-color: antiquewhite;
     /* transform: skew(5deg, 5deg); */
 }
-.text p:hover{
+.text p:hover, #table1 td img:hover{
     transform: scale(1.1);
     z-index: 1;
 }
@@ -42,4 +51,34 @@ body{
 .text :nth-child(2):hover{
     transform: scale(1.1);
     z-index: 1;
+}
+:root{
+    --col6--width: ((960/2)-10)px;
+}
+.col6{
+    width: var(--col6--width);
+    padding: 5px;
+    justify-content: center;
+}
+#fieldset1{
+    width: 950px; 
+    margin-left: 12%; 
+    display: flex; 
+    justify-content: space-around;
+}
+.foto-animation img{
+    width: 30%;
+    display: table-row-group;
+    justify-content: center;
+    border-radius: 15px;
+    animation-name: imgAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgAnim{
+    0% {margin-left: 0%;}
+    25%  {margin-left: 15%;}
+    50%   {margin-left: 30%;}
+    75%  {margin-left: 45%;}
+    100% {margin-left: 60%;}
 }
